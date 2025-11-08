@@ -1,9 +1,14 @@
+'use client'
+
+import { Button } from "@/components/Button";
+import { useState } from "react";
 import { Content1 } from "./_components/Content1";
 import { Content2 } from "./_components/Content2";
 import { Content3 } from "./_components/Content3";
 import { Content4 } from "./_components/Content4";
 
 export default function Question1Page() {
+  const [_, setStep] = useState<number>(0);
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-center py-32 px-16 bg-white dark:bg-black">
@@ -16,6 +21,16 @@ export default function Question1Page() {
           <Content3 description="useRefで状態管理" />
           <Content4 description="useStateで状態管理&表示なし" />
         </div>
+        <Button 
+          onClick={() => {
+            // 全体を再レンダリングする
+            setStep((prev) => prev + 1);
+          }}
+          type="button"
+          className="w-full mt-[20px]"
+        >
+          全体を再レンダリング
+        </Button>
       </main>
     </div>
   );
