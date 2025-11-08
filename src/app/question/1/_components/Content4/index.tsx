@@ -1,7 +1,6 @@
-'use client'
-
 import { Button } from "@/components/Button";
-import { type FC, useState } from "react";
+import type { FC } from "react";
+import { useState } from "react";
 
 type Content4Props = {
     description?: string;

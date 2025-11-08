@@ -1,5 +1,3 @@
-'use client'
-
 import { Button } from "@/components/Button";
 import { type FC, useRef } from "react";
 
