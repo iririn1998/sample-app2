@@ -1,6 +1,6 @@
-import { type FC, memo } from "react";
+import type { FC } from "react";
 
-export const Child3: FC = memo(() => {
+export const Child3: FC = () => {
     const now = performance.now();
     while (performance.now() - now < 1000) {
         // Artificial delay -- do nothing for 1000ms
@@ -15,4 +15,4 @@ export const Child3: FC = memo(() => {
             </h2>
         </div>
     )
-});
+};
