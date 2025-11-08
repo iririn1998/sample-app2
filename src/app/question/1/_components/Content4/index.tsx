@@ -1,12 +1,11 @@
 import { Button } from "@/components/Button";
-import type { FC } from "react";
-import { useState } from "react";
+import { type FC, memo, useState } from "react";
 
 type Content4Props = {
     description?: string;
 }
 
-export const Content4: FC<Content4Props> = ({ description }) => {
+export const Content4: FC<Content4Props> = memo(({ description }) => {
     const [_, setStep] = useState<number>(0);
 
     console.log('render Content4');
@@ -38,4 +37,4 @@ export const Content4: FC<Content4Props> = ({ description }) => {
             )}
         </div>
     )
-}
+});
