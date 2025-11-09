@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { Button } from "@/components/Button";
 import { useState } from "react";
@@ -13,9 +13,10 @@ export default function Page() {
           問題 2 memo
         </h1>
         <Content />
-        <Button onClick={() => setStep((prev) => prev + 1)} className="mt-4">再レンダリング</Button>
+        <Button onClick={() => setStep((prev) => prev + 1)} className="mt-4">
+          再レンダリング
+        </Button>
       </main>
     </div>
   );
 }
-

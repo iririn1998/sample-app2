@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { Content1 } from "./_components/Content1";
 import { Content2 } from "./_components/Content2";
@@ -22,4 +22,3 @@ export default function Question1Page() {
     </div>
   );
 }
-

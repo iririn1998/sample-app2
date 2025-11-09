@@ -9,4 +9,3 @@ export default function Question9Page() {
     </div>
   );
 }
-
