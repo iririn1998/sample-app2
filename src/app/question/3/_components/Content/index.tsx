@@ -15,9 +15,10 @@ export const Content: FC = () => {
       <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-100">
         Content {step}回目
       </h2>
-      {Component()}
+      {/* <Child /> */}
+      {/* {Component()} */}
       <Component />
-      {content}
+      {/* {content} */}
       <Button onClick={() => setStep((prev) => prev + 1)}>
         再レンダリング
       </Button>
