@@ -1,3 +1,7 @@
+'use client';
+
+import { Content } from "./_components/Content";
+
 export default function Question4Page() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
@@ -5,6 +9,7 @@ export default function Question4Page() {
         <h1 className="text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
           問題 4
         </h1>
+        <Content />
       </main>
     </div>
   );
