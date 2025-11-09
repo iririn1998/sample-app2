@@ -5,7 +5,7 @@ type ChildProps = {
   isFancy?: boolean;
 }
 
-export const Child: FC<ChildProps> = ({ isFancy }) => {
+export const Child2: FC<ChildProps> = ({ isFancy }) => {
   const [step, setStep] = useState(0);
 
   return (

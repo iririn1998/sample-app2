@@ -1,7 +1,11 @@
 import { Button } from "@/components/Button";
 import { type FC, useRef, useState } from "react";
 
-export const Child: FC = () => {
+type ChildProps = {
+  isFancy?: boolean;
+}
+
+export const Child: FC<ChildProps> = ({ isFancy }) => {
   const firstRender = useRef<boolean>(true);
 
   if (firstRender.current) {
